@@ -5,11 +5,8 @@ import '../Widgets/categories_item.dart';
 class categories_screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Delimeal'),
-      ),
-      body: GridView(
+    return Container(
+      child: GridView(
         padding: const EdgeInsets.all(15),
         children: DUMMY_CATEGORIES
             .map((e) => categoryItem(e.title, e.color, e.id))
