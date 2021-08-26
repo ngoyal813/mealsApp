@@ -10,13 +10,14 @@ class meal_item extends StatelessWidget {
   final Complexity complexity;
   final Affordability affordability;
 
-  meal_item(
-      {required this.id,
-      required this.title,
-      required this.imageUrl,
-      required this.complexity,
-      required this.duration,
-      required this.affordability});
+  meal_item({
+    required this.id,
+    required this.title,
+    required this.imageUrl,
+    required this.complexity,
+    required this.duration,
+    required this.affordability,
+  });
 
   String get complexityText {
     switch (complexity) {
